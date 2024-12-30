@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Form</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Favorite Food</h1>
+        <p>Fill out the form below to place your order.</p>
+    </header>
+    <main>
+        <form action="#">
+            <fieldset>
+                <legend><strong>Personal Information</strong></legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your delivery address" required></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend><strong>Order Details</strong></legend>
+                <label for="foodItem">Select Food Item:</label>
+                <select id="foodItem" name="foodItem" required>
+                    <option value="" disabled>-- Select an item --</option>
+                    <optgroup label="Fast Food">
+                        <option value="bunKabab">Bun Kabab</option>
+                        <option value="andaBurger">Anda Burger</option>
+                        <option value="chickenBurger">Chicken Burger</option>
+                        <option value="beefBurger">Beef Burger</option>
+                        <option value="muttonBurger">Mutton Burger</option>
+                        <option value="veggieBurger">Veggie Burger</option>
+                        <option value="cheeseBurger">Cheese Burger</option>
+                          </optgroup>
+                    <optgroup label="Desi Items">
+                        <option value="chickenBiryani">Chicken Biryani</option>
+                        <option value="beefBiryani">Beef Biryani</option>
+                        <option value="sindhiBiryani">Sindhi Biryani</option>
+                        <option value="matkaBiryani">Matka Biryani</option>
+                        <option value="beefPulao">Beef Pulao</option>
+                        <option value="chickenPulao">Chicken Pulao</option>
+                        <option value="matarPulao">Matar Pulao</option>
+                        <option value="ChanaPulao">Chana Pulao</option>
+                        <option value="chickenKarahi">Chicken Karahi</option>
+                        <option value="beefKarahi">Beef Karahi</option>
+                        <option value="muttonKarahi">Mutton Karahi</option>
+                        <option value="handiKarahi">Handi Karahi</option>
+                        <option value="beefHaleem">Beef Haleem</option>
+                        <option value="chickenHaleem">Chicken Haleem</option>
+                        <option value="beefNihari">Beef Nihari</option>
+                        <option value="chickenNihari">Chicken Nihari</option>
+                        <option value="nalliNihari">Nalli Nihari</option>
+                        <option value="maghazNihari">Maghaz Nihari</option>
+                        <option value="chickenKorma">Chicken Korma</option>
+                        <option value="beefKorma">Beef Korma</option>
+                        <option value="muttonKorma">Mutton Korma</option>
+                        <option value="beefKofta">Beef Kofta</option>
+                        <option value="chickenKofta">Chicken Kofta</option>
+                        <option value="muttonKofta">Mutton Kofta</option>
+                        <option value="chickenKeema">Chicken Keema</option>
+                        <option value="beefKeema">Beef Keema</option>
+                        <option value="muttonKeema">Mutton Keema</option>
+                        <option value="aloKeema">Alo Keema</option>
+                    </optgroup>
+                    <optgroup label="Seafood">
+                        <option value="friedFish">Fried Fish</option>
+                        <option value="grilledFish">Grilled Fish</option>
+                        <option value="fishCurry">Fish Curry</option>
+                        <option value="tandooriFish">Tandoori Fish</option>
+                        <option value="masalaFish">Masala Fish</option>
+                        <option value="steamedFish">Steamed Fish</option>
+                        <option value="fishFry">Fish fry</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required><br><br>
+
+                <label for="notes">Special Instructions:</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Any special instructions?"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Payment Method</strong></legend>
+                <label>
+                    <input type="radio" name="payment" value="cash" required> Cash on Delivery
+                </label><br>
+                <label>
+                    <input type="radio" name="payment" value="card"> Credit/Debit Card
+                </label><br>
+            </fieldset>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zaika House. All rights reserved.</p>
+    </footer>
+</body>
+</html>
